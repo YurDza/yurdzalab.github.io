@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YurDza Lab | Unity Assets & C# Development</title>
-    <meta name="description" content="YurDza Lab - Розробка плагінів, асетів для Unity Asset Store та архітектури 3D-застосунків.">
+    <meta name="description" content="YurDza Lab - Development of plugins and assets for the Unity Asset Store.">
     
     <style>
         :root {
@@ -49,7 +49,7 @@
             text-decoration: none;
         }
 
-        /* Стилізація логотипу: Y візуально врізається в D */
+        /* Logo styling: Y makes a cut in D */
         .logo-mark {
             font-size: 2rem;
             font-weight: 900;
@@ -61,8 +61,8 @@
             color: var(--accent-color);
             position: relative;
             z-index: 2;
-            margin-right: -6px; /* Зсув вправо */
-            text-shadow: 3px 0 0 var(--surface-color); /* Створює ефект вирізу на наступній літері */
+            margin-right: -6px;
+            text-shadow: 3px 0 0 var(--surface-color);
         }
 
         .d-letter {
@@ -141,7 +141,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 1.5rem;
-            max-width: 1000px;
+            max-width: 900px; /* Трохи зменшено для двох карток */
             margin: 0 auto;
         }
 
@@ -209,39 +209,33 @@
             <div class="logo-text">YurDza Lab</div>
         </a>
         <nav>
-            <a href="#assets">Асети</a>
-            <a href="#services">Експертиза</a>
+            <a href="#assets">Assets</a>
+            <a href="#services">Services</a>
             <a href="https://github.com/yurdzalab" target="_blank">GitHub</a>
         </nav>
     </header>
 
     <main>
         <section class="hero">
-            <h1>Інструменти для розробників Unity</h1>
-            <p>Створення оптимізованих рішень, плагінів та розробка надійної архітектури для ваших 3D-проєктів.</p>
-            <a href="#assets" class="btn">Переглянути асети</a>
+            <h1>Tools for Unity Developers</h1>
+            <p>Creating optimized solutions and custom plugins to accelerate your 3D development workflow.</p>
+            <a href="#assets" class="btn">View Assets</a>
         </section>
 
         <section id="services" class="services-section">
-            <h2 class="section-title">Що ми робимо</h2>
+            <h2 class="section-title">What We Do</h2>
             <div class="grid">
                 
                 <div class="card" id="assets">
                     <div class="card-icon">📦</div>
                     <h3>Unity Asset Store</h3>
-                    <p>Розробка та підтримка інструментів для Unity, що прискорюють робочий процес розробників. Автори плагіна <strong>Lightmap2Prefab</strong> для оптимізації роботи зі світлом та префабами.</p>
+                    <p>Development and support of Unity tools designed to speed up developer workflows. Creators of the <strong>Lightmap2Prefab</strong> plugin for optimizing work with lighting and prefabs.</p>
                 </div>
 
                 <div class="card">
                     <div class="card-icon">⚙️</div>
-                    <h3>C# & DLL Плагіни</h3>
-                    <p>Написання чистого та продуктивного коду на C#. Створення та керування DLL-бібліотеками для розширення стандартного функціоналу рушія та інтеграції сторонніх рішень.</p>
-                </div>
-
-                <div class="card">
-                    <div class="card-icon">🏗️</div>
-                    <h3>Архітектура 3D застосунків</h3>
-                    <p>Проєктування масштабованої архітектури для складних Unity-проєктів. Забезпечення стабільної роботи, оптимізація продуктивності та правильна організація взаємодії систем.</p>
+                    <h3>C# & DLL Plugins</h3>
+                    <p>Writing clean and performant C# code. Creating and managing DLL libraries to extend standard engine functionality and smoothly integrate third-party solutions.</p>
                 </div>
 
             </div>
@@ -249,7 +243,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 YurDza Lab. Всі права захищено.</p>
+        <p>&copy; 2026 YurDza Lab. All rights reserved.</p>
     </footer>
 
 </body>
