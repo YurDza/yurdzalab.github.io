@@ -141,7 +141,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 1.5rem;
-            max-width: 900px; /* Трохи зменшено для двох карток */
+            max-width: 900px;
             margin: 0 auto;
         }
 
@@ -175,14 +175,44 @@
             line-height: 1.5;
         }
 
+        /* Contact Section */
+        .contact-section {
+            text-align: center;
+            padding: 4rem 5%;
+            background-color: var(--surface-color);
+            border-top: 1px solid var(--border-color);
+            margin-top: 4rem;
+        }
+
+        .contact-section p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .email-btn {
+            display: inline-block;
+            color: var(--accent-color);
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 0.7rem 2rem;
+            border: 2px solid var(--accent-color);
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .email-btn:hover {
+            background-color: var(--accent-color);
+            color: #ffffff;
+        }
+
         footer {
             text-align: center;
             padding: 2rem;
-            border-top: 1px solid var(--border-color);
             background-color: var(--surface-color);
             color: var(--text-secondary);
             font-size: 0.9rem;
-            margin-top: 4rem;
         }
 
         @media (max-width: 600px) {
@@ -194,7 +224,10 @@
                 gap: 1rem;
             }
             nav a {
-                margin: 0 0.75rem;
+                margin: 0 0.5rem;
+            }
+            .contact-section {
+                padding: 3rem 2rem;
             }
         }
     </style>
@@ -211,7 +244,8 @@
         <nav>
             <a href="#assets">Assets</a>
             <a href="#services">Services</a>
-            <a href="https://github.com/yurdzalab" target="_blank">GitHub</a>
+            <a href="#contact">Contact</a>
+            <a href="https://github.com/yurdza" target="_blank">GitHub</a>
         </nav>
     </header>
 
@@ -239,6 +273,12 @@
                 </div>
 
             </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <p>Have a project in mind or need support for our assets?</p>
+            <a href="mailto:yurdza@gmail.com" class="email-btn">yurdza@gmail.com</a>
         </section>
     </main>
 
